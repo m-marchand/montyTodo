@@ -1,0 +1,43 @@
+{
+  "name": "craft-demo",
+  "version": "1.0.0",
+  "description": "Intuit interview application",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production nodemon ./server/server.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development concurrently \"webpack-dev-server\" \"nodemon ./server/server.js\"",
+    "test": "jest"
+  },
+  "author": "Matthew",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.1.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.9",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.8"
+  }
+}
